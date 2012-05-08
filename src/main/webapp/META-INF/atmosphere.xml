@@ -1,0 +1,5 @@
+<atmosphere-handlers>
+  <atmosphere-handler support-session="false" context-root="/chat"
+                      class-name="chat.ChatAtmosphereHandler">
+  </atmosphere-handler>
+</atmosphere-handlers>
