@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Suspend Count</title>
+    <script type="text/javascript" src="jquery/jquery-1.6.4.js"></script>
+    <script type="text/javascript" src="jquery/jquery.atmosphere.js"></script>
+    <script type="text/javascript" src="application.js"></script>
+    <style type="text/css">
+      li { font-family: monospace; }
+    </style>
+    <script type="text/javascript">
+      $.atmosphere.subscribe({
+        url: 'atmosphere',
+        transport: 'long-polling',
+        onMessage: function(response) {
+          $('<li/>').text(response.responseBody).appendTo('body>ul');
+        }
+      });
+    </script>
+  </head>
+  <body>
+    <ul></ul>
+  </body>
+</html>

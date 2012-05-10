@@ -1,0 +1,1 @@
+Every time a connection starts, the AtmosphereHandler gets the number of AtmosphereResources from the default Broadcaster and prints it to the console.

@@ -1,0 +1,5 @@
+<atmosphere-handlers>
+  <atmosphere-handler support-session="false" context-root="/atmosphere"
+                      class-name="atmospheresandbox.suspendcount.SuspendCountAtmosphereHandler">
+  </atmosphere-handler>
+</atmosphere-handlers>
