@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <script type="text/javascript" src="jquery/jquery-1.6.4.js"></script>
+    <script type="text/javascript" src="jquery/jquery.atmosphere.js"></script>
+    <script type="text/javascript">
+      $(function() {
+        function log(x) { $('<li/>').text(x).appendTo('body>ul'); }
+        $.atmosphere.subscribe({
+          url: 'atmosphere',
+          transport: 'long-polling',
+          onMessage: function() { log('message'); },
+          onOpen: function() { log('open'); },
+          onError: function() { log('error'); },
+          onReconnect: function() { log('reconnect'); }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <ul></ul>
+  </body>
+</html>

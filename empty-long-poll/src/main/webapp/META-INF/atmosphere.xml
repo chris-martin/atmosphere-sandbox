@@ -1,0 +1,5 @@
+<atmosphere-handlers>
+  <atmosphere-handler support-session="false" context-root="/atmosphere"
+                      class-name="atmospheresandbox.nothing.NothingAtmosphereHandler">
+  </atmosphere-handler>
+</atmosphere-handlers>
