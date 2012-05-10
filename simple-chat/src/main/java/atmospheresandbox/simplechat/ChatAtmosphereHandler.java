@@ -1,4 +1,4 @@
-package chat;
+package atmospheresandbox.simplechat;
 
 import java.io.IOException;
 import java.io.PrintWriter;
