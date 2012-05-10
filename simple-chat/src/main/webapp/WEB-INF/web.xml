@@ -9,6 +9,10 @@
     <servlet-class>org.atmosphere.cpr.AtmosphereServlet</servlet-class>
     <async-supported>true</async-supported>
     <load-on-startup>1</load-on-startup>
+    <init-param>
+      <param-name>org.atmosphere.cpr.CometSupport.maxInactiveActivity</param-name>
+      <param-value>5000</param-value>
+    </init-param>
   </servlet>
 
   <servlet-mapping>
